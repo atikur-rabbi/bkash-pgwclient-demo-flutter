@@ -11,7 +11,7 @@ Here, I've implemented 2 way to Integrate bKash payment gateway with flutter
 ### local Asset
 No need to change anything for local testing purpose.
 
-You must have to use patched version of [webview_flutter](https://pub.dev/packages/webview_flutter) (details discussion [bellow](https://github.com/chayanforyou/bkash-pgwclient-demo-flutter#file-uses)), or can use [flutter_inappwebview](https://pub.dev/packages/flutter_inappwebview)
+You must have to use patched version of [webview_flutter](https://pub.dev/packages/webview_flutter) (details discussion [bellow](https://github.com/chayanforyou/bkash-pgwclient-demo-flutter#patched-webview)), or can use [flutter_inappwebview](https://pub.dev/packages/flutter_inappwebview)
 I'm working on `flutter_inappwebview` bKash payment integration.
 
 ### Web Server
