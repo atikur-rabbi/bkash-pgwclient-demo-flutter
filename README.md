@@ -9,7 +9,7 @@ Here, I've implemented 2 way to Integrate bKash payment gateway with flutter
 2. Through web server (PHP)
 
 ### local Asset
-Not need to change anything for local testing purpose.
+No need to change anything for local testing purpose.
 
 ### Web Server
 For server side implementation, Keep [bKash_api_sandbox.zip](https://github.com/chayanforyou/bkash-pgwclient-demo-flutter/raw/master/bKash_api_sandbox.zip)
