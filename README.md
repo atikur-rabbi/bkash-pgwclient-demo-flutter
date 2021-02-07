@@ -114,7 +114,7 @@ bkash-pgwClient-demo-flutter/
 * The Flutter WebView plugin is in preview and at the moment it only loads URIs.
   It’d be nice if we can load local html (along with Javascript and CSS) files from local assets.
 * I followed
-  [this][https://medium.com/flutter-community/loading-local-assets-in-webview-in-flutter-b95aebd6edad/]
+  [this](https://medium.com/flutter-community/loading-local-assets-in-webview-in-flutter-b95aebd6edad/)
   blog post made minimal changes to the plugin to provide a way to load asset files.
 
 ### Create a branch
