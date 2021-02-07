@@ -10,11 +10,15 @@ Here, I've implemented 2 way to Integrate bKash payment gateway with flutter
 
 ### local Asset
 No need to change anything for local testing purpose.
+You must have to use patched version of [webview_flutter](https://pub.dev/packages/webview_flutter) (details discuss on bellow), or can use [flutter_inappwebview](https://pub.dev/packages/flutter_inappwebview)
+I'm working on `flutter_inappwebview` bKash payment integration.
 
 ### Web Server
 For server side implementation, Keep [bKash_api_sandbox.zip](https://github.com/chayanforyou/bkash-pgwclient-demo-flutter/raw/master/bKash_api_sandbox.zip)
 files on your hosting & change the ```config.json``` with __`sandbox`__ credential __`(Not work with live credential)`__ `app_key`, `app_secret`, `username` & `password`. Nothing else needs to change.
 Then change the `initialUrl` of `bkash_payment.dart` in line ```initialUrl: 'http://your.hosting.com/bkash/payment.php'``` with your api host or localhost (for testing) link.
+
+Note: You can use default `webview_flutter` plugin. Patched version not required.
 
 ## Features
 
