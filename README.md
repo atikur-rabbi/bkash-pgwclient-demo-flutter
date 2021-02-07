@@ -13,7 +13,7 @@ Not need to change anything for local testing purpose.
 
 ### Web Server
 For server side implementation, Keep [bKash_api_sandbox.zip](https://github.com/chayanforyou/bkash-pgwclient-demo-flutter/raw/master/bKash_api_sandbox.zip)
-files on your hosting & change the ```config.json``` with **```sandbox```** credential __```(Not work with live credential)```__ `app_key`, `app_secret`, `username` & `password`. Nothing else needs to change.
+files on your hosting & change the ```config.json``` with __`sandbox`__ credential __`(Not work with live credential)`__ `app_key`, `app_secret`, `username` & `password`. Nothing else needs to change.
 Then change the `initialUrl` of `bkash_payment.dart` in line ```initialUrl: 'http://your.hosting.com/bkash/payment.php'``` with your api host or localhost (for testing) link.
 
 ## Features
