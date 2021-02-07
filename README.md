@@ -4,6 +4,17 @@
 
 
 An app with a simple easy-to-start boilerplate codebase for integrating bKash with ease. The whole app is developed using flutter with layers-by-features packaging & other standard practices.
+Here, I implemented 2 way to Integrate bKash with flutter
+1. Through local asset
+2. Through web server (PHP)
+
+### local Asset
+Not need to change anything for local testing purpose.
+
+### Web Server
+For server side implementation, Keep [bKash_api_sandbox.zip](https://github.com/chayanforyou/bkash-pgwclient-demo-flutter/raw/master/bKash_api_sandbox.zip)
+files on your hosting & change the `config.json` with sandbox credential `app_key`, `app_secret`, `username` & `password`. Nothing else needs to change.
+Then change the `initialUrl` of `bkash_payment.dart` in line `initialUrl: 'http://your.hosting.com/bkash/payment.php'` with your api host or localhost (for testing) link.
 
 ## Features
 
