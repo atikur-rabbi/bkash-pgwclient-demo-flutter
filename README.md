@@ -4,7 +4,7 @@
 
 
 An app with a simple easy-to-start boilerplate codebase for integrating bKash with ease. The whole app is developed using flutter with layers-by-features packaging & other standard practices.
-Here, I implemented 2 way to Integrate bKash with flutter
+Here, I've implemented 2 way to Integrate bKash payment gateway with flutter
 1. Through local asset
 2. Through web server (PHP)
 
