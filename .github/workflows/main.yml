@@ -41,11 +41,11 @@ jobs:
           name: app-release.apk
           path: build/app/outputs/flutter-apk/app-release.apk
           
-      - name: Draft the release
-        id: release-drafter
-        uses: release-drafter/release-drafter@fe52e97d262833ae07d05efaf1a239df3f1b5cd4
-        with:
-          prerelease: true
+      - uses: release-drafter/release-drafter@v5
+        # (Optional) specify config name to use, relative to .github/. Default: release-drafter.yml
+        # with:
+        #   config-name: my-config.yml
+        #   disable-autolabeler: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
