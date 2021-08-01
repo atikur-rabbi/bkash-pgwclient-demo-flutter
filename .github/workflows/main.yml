@@ -65,14 +65,13 @@ jobs:
           branch: 'master'
           draft: 'false'
           prerelease: 'false'
-      - name: Create Release With Asset
-        id: Release-AIO
-        uses: Hs1r1us/Release-AIO
+          
+      - name: Upload to release
+        uses: JasonEtco/upload-to-release@master
+        with:
+          args: my-image.tar
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag_name: ${{ github.ref }}
-          asset_files: 'build/app/outputs/flutter-apk/*.apk'
 
           
           
