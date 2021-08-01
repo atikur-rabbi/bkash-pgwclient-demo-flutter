@@ -41,12 +41,17 @@ jobs:
           name: app-release.apk
           path: build/app/outputs/flutter-apk/app-release.apk
           
-      - uses: release-drafter/release-drafter@v5
-        # (Optional) specify config name to use, relative to .github/. Default: release-drafter.yml
-        # with:
-        #   config-name: my-config.yml
-        #   disable-autolabeler: true
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#       - uses: release-drafter/release-drafter@v5
+#         # (Optional) specify config name to use, relative to .github/. Default: release-drafter.yml
+#         # with:
+#         #   config-name: my-config.yml
+#         #   disable-autolabeler: true
+#         env:
+#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Create Github Release
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: "build/app/outputs/flutter-apk/*.apk"
+          token: ${{ secrets.RELEASES_TOKEN }}
 
 
