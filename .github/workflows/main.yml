@@ -35,7 +35,6 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, world!
       - run: flutter pub get
-      - run: flutter test
       - run: flutter build apk
       - run: flutter build appbundle
 
