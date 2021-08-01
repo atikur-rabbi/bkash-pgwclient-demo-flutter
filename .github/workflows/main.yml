@@ -62,7 +62,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           version: 'v1.0.0'
           description: 'This is an awesome version :ok_hand:'
-          repo: 'alice-biometrics/github-releaser'
+          repo: 'atikur-rabbi/bkash-pgwclient-demo-flutter'
+          artifacts: "build/app/outputs/flutter-apk/*.apk"
           branch: 'master'
           draft: 'false'
           prerelease: 'false'
