@@ -48,10 +48,16 @@ jobs:
 #         #   disable-autolabeler: true
 #         env:
 #           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#       - name: Create Github Release
+#         uses: ncipollo/release-action@v1
+#         with:
+#           artifacts: "build/app/outputs/flutter-apk/*.apk"
+#           token: ${{ secrets.RELEASES_TOKEN }}
+
       - name: Create Github Release
         uses: ncipollo/release-action@v1
         with:
           artifacts: "build/app/outputs/flutter-apk/*.apk"
-          token: ${{ secrets.RELEASES_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
 
 
